@@ -1,0 +1,296 @@
+﻿
+<div id="trailer" class="is_overlay">
+    <video class="s-bg-how__video s-bg-how__video_state_visible" autoplay="true" preload="metadata" loop="loop" x-webkit-airplay="allow" poster="//avatars.mds.yandex.net/get-bunker/118781/38622dc2d7e00e8a11e5eb531b326c4616963913/orig">
+        <source src="https://streaming.video.yandex.ru/get/yndx-online-media/m-67230-15181c7a742-58b8f91bec3df8e4/720p.webm" type="video/webm">
+        <source src="https://streaming.video.yandex.ru/get/yndx-online-media/m-67230-15181c7a742-58b8f91bec3df8e4/sq.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+@{
+    ViewData["Title"] = "About";
+}
+
+
+
+<link rel="stylesheet" href="~/css/site.css" />
+
+
+
+<div class="layers zero " >
+    <span class="header">REG EXP</span>
+</div>
+
+<div  class="layers">
+    <div class="narrative">
+        <h1>Регулярное выражение – это объект, описывающий символьный шаблон</h1>
+        <font color="orangered">
+            <h1>var pattern = /s$/;</h1>
+            <h1>var pattern = new RegExp("s$");</h1>
+        </font>
+
+
+    </div>
+</div>
+
+<div class="layers">
+    <div class="narrative">
+    </div>
+
+    <div class="wrap narrative">
+        <div class="left_col">
+            <h1>
+                <font color="orangered">Метасимволы</font><br>
+                Литералы
+            </h1>
+        </div>
+        <div class="left_col">
+            <h1><font color="orangered">*</font>.txt</h1>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="layers">
+    <div class="narrative">
+        <h2>
+            <font color="orangered">[...] </font>Любой из символов в скобках <br>
+            <font color="orangered">[^...]</font> Любой из символов, не в скобках <br>
+            <font color="orangered">.</font> Любой символ, кроме разделителей Unicode-строки <br>
+            <font color="orangered">\w</font>Эквивалентно [a-zA-Z0-9_] <br>
+            <font color="orangered">\W</font> Эквивалентно [^a-zA-Z0-9_] <br>
+            <font color="orangered">\s</font> Любой пробельный символ Unicode <br>
+            <font color="orangered">\S</font> Любой непробельный символ Unicode. <br>
+            <font color="orangered">\d</font> Эквивалентно [0-9] <br>
+            <font color="orangered">\D</font> Эквивалентно [^0-9]<br>
+        </h2>
+
+    </div>
+</div>
+<div class="layers">
+    <div class="narrative">
+        <h1>Якорь &#9875;</h1>
+        <p>  Исходный текст: "cat cats scat scats"</p>
+    </div>
+
+    <div class="wrap narrative">
+        <div class="left_col">
+            <p><font color="orangered">^</font> начало подстроки /^cat/</p>
+            <p><font color="orangered">$</font> конец подстроки /cat$/</p>
+        </div>
+        <div class="left_col">
+            <p>cat cats <s>scat scats</s></p>
+            <p>cat <s>cats</s> scat <s>scats</s></p>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<div class="layers">
+    <div class="narrative">
+        <h2><font color="orangered">Альтернатива</font></h2>
+        <h2>/grey<font color="orangered">|</font>gray/</h2>
+        <h2><font color="orangered">Повторение</font></h2>
+        <h2>
+            Исходная строка: "aaaa"<br> Жадное /a<font color="orangered">+</font>/ ----> aaaa<br> Нежадное /a<font color="orangered">+?</font>/ ----> a<br>
+        </h2>
+    </div>
+</div>
+
+<div class="layers">
+
+
+
+    <div class="narrative">
+
+        <h1><font color="orangered">Флаги &#9873;</font></h1>
+        <h2>
+            <font color="orangered">i</font> нечувствительность к регистру<br />
+            <font color="orangered">g</font> глобальный поиск<br />
+            <font color="orangered"> m</font> многострочность<br />
+        </h2>
+    </div>
+
+
+
+</div>
+
+
+<div class="layers">
+    <div class="narrative">
+        <h1>Квантификаторы <font color="orangered">+, *, ? и {n}</font></h1>
+        <h2>
+            <font color="orangered">{n}</font> точное количество <font color="orangered">\d{5} = \d\d\d\d\d</font><br>
+            <font color="orangered">{3,5}</font> от-до количество<br>
+            <font color="orangered">+ </font>один или более = <font color="orangered">{1,}</font><br>
+            <font color="orangered">? </font>ноль или один = <font color="orangered">{0,1}</font><br>
+            <font color="orangered">* </font>ноль или более = <font color="orangered">{0,}</font><br>
+        </h2>
+    </div>
+
+</div>
+
+<div class="layers ">
+    <div class="narrative">
+
+        <h1>Обратные ссылки \n и $n</h1>
+        <h2>
+            Ссылки в строке замены имеют вид $n, где n – это номер скобочной группы.
+            Вместо $n подставляется содержимое соответствующей скобки
+        </h2>
+        <h2>
+            <font color="orangered">
+                var name = "Лягушонок Пепе";<br>
+                name = name.replace(/([а-яё]+) ([а-яё]+)/i, "$2, $1");<br>
+            </font>
+            
+                // Пепе, Лягушонок
+           <br>
+
+        </h2>
+    </div>
+</div>
+
+
+<div class="layers">
+    <div class="narrative">
+
+
+        <h1>URL validation regex</h1>
+
+        <h2><font color="orangered">JS</font></h2>
+        <h2>
+            /^(([^<>()\[\]\\.,;:\s&#64"]+(\.[^<>()\[\]\\.,;:\s&#64"]+)*)|(".+"))&#64((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+        </h2>
+        <h2><font color="orangered">RFC</font></h2>
+        <h2>
+            (?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")&#64(?: (?:[a-z0-9](?:[a-z0-9-] *[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?: 25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}
+            (?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])
+        </h2>
+    </div>
+
+
+
+
+</div>
+
+<div class="layers">
+    <div class="narrative">
+        <h1><font color="orangered"> valid URL examples</font></h1>
+        <h2>
+            http://foo.com/blah_blah <br>
+            http://foo.com/blah_blah/ <br>
+            http://foo.com/blah_blah/ <br>
+            http://foo.com/blah_blah_(wikipedia) <br>
+            http://foo.com/blah_blah_(wikipedia)_(again) <br>
+            http://www.example.com/wpstyle/?p=364 <br>
+            https://www.example.com/foo/?bar=baz&inga=42&quux <br>
+            http://✪df.ws/123 <br>
+            http://userid:password@example.com:8080 <br>
+            http://userid:password@example.com:8080/ <br>
+            http://userid@example.com <br>
+            http://userid@example.com/ <br>
+            http://userid@example.com:8080 <br>
+            http://userid@example.com:8080/ <br>
+            http://userid:password@example.com <br>
+            http://userid:password@example.com/ <br>
+            http://142.42.1.1/ <br>
+            http://142.42.1.1:8080/ <br>
+            http://➡.ws/䨹 <br>
+            http://⌘.ws <br>
+            http://⌘.ws/ <br>
+            http://foo.com/blah_(wikipedia)#cite-1 <br>
+            http://foo.com/blah_(wikipedia)_blah#cite-1 <br>
+            http://foo.com/unicode_(✪)_in_parens <br>
+            http://foo.com/(something)?after=parens <br>
+            http://☺.damowmow.com/ <br>
+            http://code.google.com/events/#&product=browser <br>
+            http://j.mp <br>
+            ftp://foo.bar/baz <br>
+            http://foo.bar/?q=Test%20URL-wtf%20stuff <br>
+            http://مثال.إختبار <br>
+            http://例子.测试 <br>
+            http://उदाहरण.परीक्षा <br>
+            http://-.~_!$&'()*+,;=:%40:80%2f::::::#&64wtf.com <br>
+            http://1337.net <br>
+            http://a.b-c.de <br>
+            http://223.255.255.254 <br>
+
+        </h2>
+    </div>
+</div>
+<div class="layers">
+    <div class="narrative">
+        <h1>Lookaround = lookahead + <s>lookbehind</s></h1>
+        <h2><font color="orangered">/\d+(?=%)/.exec("100% of US presidents have been male")</font><br>  // 100</h2>
+        <h2><font color="orangered">/\d{4}(?!%)/.exec("61.5% of Russian presidents in 2024 will have been Putin")</font><br> // 61.5 (! = negative)</h2>
+
+    </div>
+</div>
+
+
+
+<div class=" layers">
+    <div class="narrative">
+        <h2>
+            <font color="orangered">regexp.exec</font><br>
+            var matches = /(mean \S+)/.exec('HAHAHAHA I mean meow');<br>
+            //matches[0] = "mean meow"<br>
+
+
+            <font color="orangered">regexp.test</font><br>
+            var matches = /(mean \S+)/.test('HAHAHAHA I mean meow');<br>
+            // matches = true<br>
+        </h2>
+    </div>
+</div>
+<div class=" layers">
+    <div class="narrative">
+
+        <h2>
+            <font color="orangered">string.match</font><br>
+            var str = "The rain in SPAIN stays mainly in the plain";<br>
+            var res = str.match(/ain/g);<br>
+            //ain, ain, ain<br>
+
+            <font color="orangered">string.replace</font><br>
+            var str = "Mr Blue has a blue house and a blue car";<br>
+            var res = str.replace(/blue/g, "red");<br>
+            //Mr Blue has a red house and a red car<br>
+        </h2>
+    </div>
+</div>
+<div class="layers">
+    <div class="narrative">
+
+        <h2>
+            <font color="orangered">
+                string.search
+            </font><br>
+            var str = "Mr. Pepe is sad";<br>
+            var n = str.search(/Pepe/i);<br>
+            //4<br>
+            <font color="orangered">
+                string.split
+            </font><br>
+            var names = 'Pepe the frog; Kermit the frog ';<br>
+            var re = /\s*;\s*/;<br>
+            var nameList = names.split(re);<br>
+            // ["Pepe the frog", "Kermit the frog "]<br>
+        </h2>
+    </div>
+</div>
+
+<div class="layers rick">
+
+</div>
+
+<div class="layers morty">
+
+</div>
