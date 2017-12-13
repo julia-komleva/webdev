@@ -10,3 +10,15 @@ C:\Users\usr\Documents\WebDev\RegExp\RegExp\obj\Debug\netcoreapp2.0\RegExp.Assem
 C:\Users\usr\Documents\WebDev\RegExp\RegExp\obj\Debug\netcoreapp2.0\RegExp.AssemblyInfo.cs
 C:\Users\usr\Documents\WebDev\RegExp\RegExp\obj\Debug\netcoreapp2.0\RegExp.dll
 C:\Users\usr\Documents\WebDev\RegExp\RegExp\obj\Debug\netcoreapp2.0\RegExp.pdb
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\bin\Debug\netcoreapp2.0\RegExp.deps.json
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\bin\Debug\netcoreapp2.0\RegExp.runtimeconfig.json
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\bin\Debug\netcoreapp2.0\RegExp.runtimeconfig.dev.json
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\bin\Debug\netcoreapp2.0\RegExp.dll
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\bin\Debug\netcoreapp2.0\RegExp.pdb
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\obj\Debug\netcoreapp2.0\RegExp.csproj.CoreCompileInputs.cache
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\obj\Debug\netcoreapp2.0\RegExp.AssemblyInfoInputs.cache
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\obj\Debug\netcoreapp2.0\RegExp.AssemblyInfo.cs
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\obj\Debug\netcoreapp2.0\RegExp.dll
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\obj\Debug\netcoreapp2.0\RegExp.pdb
+C:\Users\usr\Documents\GitHub\webdev\RegExp\RegExp\obj\Debug\netcoreapp2.0\RegExp.csprojResolveAssemblyReference.cache

@@ -35,7 +35,7 @@ namespace RegExp
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-
+            services.Configure<SMTPconfiguration>(Configuration.GetSection("SMTPconfiguration"));
             services.AddMvc();
         }
 
