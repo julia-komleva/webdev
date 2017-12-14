@@ -1,0 +1,21 @@
+html, body {
+    overflow: hidden;
+    margin: 0px;
+    font-family: verdana;
+}
+canvas {
+    position: absolute;
+}
+.divStats {
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 250%;
+    padding: 50px;
+}
+#divStatsId {
+    left: 50px;
+    top: 50px;
+     
+}
