@@ -1,4 +1,6 @@
-
+//Симуляция Conway's Game of Life
+//Поле замкнуто в тор
+//Есть статистика по живыи и мертвым
 cellSize = 50;
 canvasWidth = window.innerWidth;
 canvasHeight = window.innerHeight;
@@ -58,7 +60,7 @@ function fillCanvas(context, cells) {
 
     for (var i = 0; i < cells.rows; i++) {
         for (var j = 0; j < cells.columns; j++) {
-            if (cells[i][j] === 1) // T_____T
+            if (cells[i][j] === 1) 
             {
                 context.fillStyle = 'rgba(206,202,179,1)';
             } 
@@ -87,19 +89,26 @@ function updateCells(cells)
         {
             neighbors = 0;
 
-            mini = Math.max(0, i - 1); //границы
-            maxi = Math.min(cells.rows, i + 2);
-            minj = Math.max(0, j - 1);
-            maxj = Math.min(cells.columns, j + 2);
-
-            for (var k = mini; k < maxi; k++) // тупой подсчет соседей
+//Поле замкнуто в тор
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//здесь должен был быть красивый код, но JS не знает, что при делении по модулю : -1 % n = n - 1///
+///////////////////////////////////////////////////////////////////////////////////////////////////
+            for (var k = -1; k <= 1; k++)
             {
-                for (var l = minj; l < maxj; l++) 
+                for(var l = -1; l <= 1; l++)
                 {
-                    if (previousCells[k][l] === 1) 
-                    {
+                    if (i + k === -1) //костыль
+                        torIdx1 = 1 % cells.rows; 
+                    else 
+                        torIdx1 = (i + k) % cells.rows;
+                    if ( j + l === -1) //костыль
+                        torIdx2 = 1 % cells.rows;
+                    else 
+                        torIdx2 = (j + l) % cells.columns;
+                    
+
+                    if (previousCells[torIdx1][torIdx2] === 1)
                         neighbors++;
-                    }
                 }
             }
             
