@@ -124,7 +124,7 @@ function updateCells(cells)
             } 
             else //клетка была мертвой
             {
-                if (neighbors === 3) //рпождение клетки
+                if (neighbors === 3) //рождение клетки
                 {
                     cells[i][j] = 1;
                     cells.alive++;
